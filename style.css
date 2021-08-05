@@ -17,19 +17,28 @@
     grid-area: Title-Left; 
     font-family: 'Crimson Text', serif;
     text-align: center;
-    margin-left: 500px;
+    color: white;
 }
   
   .Title-Right { 
     grid-area: Title-Right;
     font-family: 'Crimson Text', serif;
     text-align: center;
-    margin-right: 500px;
+    color: white;
+
 }
   
   .Logo { 
-    grid-area: Logo; 
+    grid-area: Logo;
+
     
+}
+
+.Logo img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
 }
   
   .Arrow-Right { grid-area: Arrow-Right; }
@@ -42,6 +51,52 @@
   
   .Footer { grid-area: Footer; }
   
+.arrow {
+  width:1080px;
+  margin:50px auto;
+}
+
+.line {
+  margin-top:14px;
+  width:1050px;
+  background:linear-gradient(to right,red, magenta);
+  height:10px;
+  float:left;
+}
+.point {	
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid magenta;
+    float:right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background:#111;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 46px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background:linear-gradient(to right, red,magenta);
+}
+
   
 
   
