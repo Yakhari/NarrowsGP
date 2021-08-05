@@ -5,13 +5,13 @@
 .container {
     display: grid;
     grid-template-columns: 0.6fr 1.7fr 0.5fr 1.7fr 0.6fr;
-    grid-template-rows: 0.6fr 0.3fr 0.5fr 0.3fr 3.8fr 0.5fr;
+    grid-template-rows: 0.6fr  0.5fr 0.3fr  0.3fr 3.8fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "Title-Left Title-Left Logo Title-Right Title-Right"
-      "Arrow-Right Arrow-Right Arrow-Right Arrow-Right Arrow-Right"
       "Navbar Navbar Navbar Navbar Navbar"
+      "Arrow-Right Arrow-Right Arrow-Right Arrow-Right Arrow-Right"
       "Arrow-Left Arrow-Left Arrow-Left Arrow-Left Arrow-Left"
       ". Article Article Article ."
       "Footer Footer Footer Footer Footer";
@@ -22,6 +22,7 @@
     font-family: 'Crimson Text', serif;
     text-align: center;
     color: white;
+    margin: 40px auto;
 }
   
   .Title-Right { 
@@ -29,6 +30,7 @@
     font-family: 'Crimson Text', serif;
     text-align: center;
     color: white;
+    margin: 40px auto;
 
 }
   
@@ -42,24 +44,27 @@
   width: 100px;
   height: 100px;
   display: block;
-  margin: auto;
+  margin: 10px auto;
 }
   
   .Arrow-Right { grid-area: Arrow-Right; }
   
   .Navbar { 
     grid-area: Navbar; 
-    width: 100vw;
     background-color: #111;
-    overflow: none;
+    overflow: hidden;
+    width:100%;
+    
   }
   .Navbar a {
     float: left;
-    padding: 14.6px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: white;
+    font-family: 'Crimson Text', serif;
     text-decoration: none;
     font-size: 17px;
-    width: 12.5vw; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    width: 16.6667%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
   }
   .Navbar a:hover {
@@ -76,18 +81,21 @@
   
   .Arrow-Left { grid-area: Arrow-Left; }
   
-  .Article { grid-area: Article; }
+  .Article { 
+    grid-area: Article; 
+    margin: -69px ;
+  }
   
   .Footer { grid-area: Footer; }
   
 .arrow {
   width:100vw;
-  margin:50px auto;
+  margin:-80px auto;
 }
 
 .line {
   margin-top:14px;
-  width:98.9vw;
+  width:98.8vw;
   background:linear-gradient(to right,red, magenta);
   height:10px;
   float:left;
@@ -101,7 +109,33 @@
     float:left;
 }
 
+.arrowL {
+  width:100vw;
+  margin:-57px auto;
+}
 
+.lineL {
+  margin-top:14px;
+  width:98.8vw;
+  background:linear-gradient(to right,red, magenta);
+  height:10px;
+  float:right;
+}
+.pointL {	
+    width: 0; 
+    height: 0; 
+    border-top: 2vh solid transparent;
+    border-bottom: 2vh solid transparent;
+    border-right: 2vh solid red;
+    float:right;
+}
+
+img:hover {
+    animation:spin 200s ease-in infinite;
+}
+@keyframes spin { 
+    100% { -webkit-transform: rotate(360000deg); transform:rotate(360000deg); } 
+}
 
   
 
