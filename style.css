@@ -1,3 +1,7 @@
+*{
+  margin:0;
+}
+
 .container {
     display: grid;
     grid-template-columns: 0.6fr 1.7fr 0.5fr 1.7fr 0.6fr;
@@ -43,7 +47,32 @@
   
   .Arrow-Right { grid-area: Arrow-Right; }
   
-  .Navbar { grid-area: Navbar; }
+  .Navbar { 
+    grid-area: Navbar; 
+    width: 100vw;
+    background-color: #111;
+    overflow: none;
+  }
+  .Navbar a {
+    float: left;
+    padding: 14.6px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 12.5vw; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  .Navbar a:hover {
+    background-color: #000;
+    }
+    
+    /* Style the current/active link */
+    .navbar a.active {
+      background:linear-gradient(to right, red,magenta);
+    }
+
+
+
   
   .Arrow-Left { grid-area: Arrow-Left; }
   
@@ -52,13 +81,13 @@
   .Footer { grid-area: Footer; }
   
 .arrow {
-  width:1080px;
+  width:100vw;
   margin:50px auto;
 }
 
 .line {
   margin-top:14px;
-  width:1050px;
+  width:98.9vw;
   background:linear-gradient(to right,red, magenta);
   height:10px;
   float:left;
@@ -66,36 +95,13 @@
 .point {	
     width: 0; 
     height: 0; 
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 30px solid magenta;
-    float:right;
+    border-top: 2vh solid transparent;
+    border-bottom: 2vh solid transparent;
+    border-left: 2vh solid magenta;
+    float:left;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background:#111;
-}
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 46px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background:linear-gradient(to right, red,magenta);
-}
 
   
 
