@@ -19,7 +19,7 @@
   
   .Title-Left { 
     grid-area: Title-Left; 
-    font-family: 'Crimson Text', serif;
+    font-family: 'Electrolize', sans-serif;
     text-align: center;
     color: white;
     margin: 40px auto;
@@ -27,7 +27,7 @@
   
   .Title-Right { 
     grid-area: Title-Right;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Electrolize', sans-serif;
     text-align: center;
     color: white;
     margin: 40px auto;
@@ -61,7 +61,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Electrolize', sans-serif;
     text-decoration: none;
     font-size: 17px;
     width: 16.6667%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
@@ -73,7 +73,7 @@
     
     /* Style the current/active link */
     .navbar a.active {
-      background:linear-gradient(to right, red,magenta);
+     color: white;
     }
 
 
@@ -83,21 +83,41 @@
   
   .Article { 
     grid-area: Article; 
-    margin: -69px ;
+    margin-top: -7vh;
+    color: white;
+    text-align: center;
+    font-family: 'STIX Two Text', serif;
+    padding: 2vh;
+    font-size: 3vh;
+    background:linear-gradient(to bottom,rgb(43, 42, 42), black);
   }
   
-  .Footer { grid-area: Footer; }
+  .Footer { 
+    grid-area: Footer; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    overflow: hidden;
+    text-align: center;
+    background:linear-gradient(to right,rgb(100, 0, 0), rgb(100, 0, 100));
+    color: white;
+
+  }
+
   
 .arrow {
   width:100vw;
-  margin:-80px auto;
+  margin:-8.5vh auto;
 }
 
 .line {
-  margin-top:14px;
+  margin-top:1.5vh;
   width:98.8vw;
   background:linear-gradient(to right,red, magenta);
-  height:10px;
+  height:1vh;
   float:left;
 }
 .point {	
@@ -111,14 +131,14 @@
 
 .arrowL {
   width:100vw;
-  margin:-57px auto;
+  margin:-5.8vh auto;
 }
 
 .lineL {
-  margin-top:14px;
+  margin-top:1.5vh;
   width:98.8vw;
   background:linear-gradient(to right,red, magenta);
-  height:10px;
+  height:1vh;
   float:right;
 }
 .pointL {	
@@ -134,9 +154,46 @@ img:hover {
     animation:spin 200s ease-in infinite;
 }
 @keyframes spin { 
-    100% { -webkit-transform: rotate(360000deg); transform:rotate(360000deg); } 
+    100% { -webkit-transform: rotate(-360000deg); transform:rotate(360000deg); } 
 }
 
-  
+input{
+  border-image-source: linear-gradient(to right,rgb(100, 0, 0), rgb(100, 0, 100));
+  border-width: 5pt;
+  border-image-slice: 1;
+  height:3vh;
+  width: 25%;
+}
 
-  
+input[type=button], input[type=submit], input[type=reset] {
+  background: linear-gradient(to right,red, magenta);
+  border: none;
+  color: white;
+  margin:1vh;
+}
+
+.FirstName{
+  margin: 1vh;
+}
+.LastName{
+  margin: 1vh;
+}
+.UserName{
+  margin: 1vh;
+}
+.Password{
+  margin: 1vh;
+}
+.Bio{
+  margin: 1vh;
+}
+a:link {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: magenta);
+  background-color: transparent;
+  text-decoration: none;
+}
