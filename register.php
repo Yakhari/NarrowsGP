@@ -76,6 +76,7 @@
                 </div>
             </div>
             <div class="Article">
+                <form id="RegisterForm" name="RegisterForm" method="post" action="" enctype="multipart/form-data">
                 <h2>Welcome!</h2>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
                 <div class="FirstName"><input name="FirstName" type="text" required="required" class="textfield" id="FirstName" placeholder="First Name"></div>
@@ -83,8 +84,9 @@
                 <div class="Password"><input name="Password" type="password" required="required" class="textfield" id="password" placeholder="Password"></div>
                 <div class="UserName"><input name="UserName" type="text" required="required" class="textfield" id="UserName" placeholder="Username"></div>
                 <div class="Bio"><input name="Bio" type="text" class="textfield" id="UserName" placeholder="Bio"></div>
-                <div class="Avatar"><input name="file" type="file" id="avatar"></div>
-                <div class="Login"><input name="LogIn" type="submit" class="button" id="LogIn" value="Log In"></div>    
+                <!-- <div class="Avatar"><input name="file" type="file" id="avatar"></div> -->
+                <div class="Login"><input name="SignUp" type="submit" class="button" id="SignUp" value="SignUp"></div>    
+                </form>
                 <h5>Already have an account?</h5>
                 <h5>Log in with it <a href="login.php">here!</a></h5>
             </div>

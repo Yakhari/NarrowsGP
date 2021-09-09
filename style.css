@@ -187,13 +187,3 @@ input[type=button], input[type=submit], input[type=reset] {
 .Bio{
   margin: 1vh;
 }
-a:link {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: magenta);
-  background-color: transparent;
-  text-decoration: none;
-}
