@@ -187,13 +187,15 @@ input[type=button], input[type=submit], input[type=reset] {
 .Bio{
   margin: 1vh;
 }
-a:link {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
+.link a{
+  background: -webkit-linear-gradient(red,magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-a:visited {
-  color: magenta);
-  background-color: transparent;
-  text-decoration: none;
+.link a:visited{
+  background: -webkit-linear-gradient(red,magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
