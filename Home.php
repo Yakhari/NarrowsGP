@@ -1,5 +1,6 @@
 <?php
     include"conn.php";
+    session_start()
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +34,17 @@
                 <a href="Careers.php">Careers</a>
                 <a href="Forums.php">Forums</a>
                 <a href="Contacts.php">Contacts</a>
-                <a href="login.php">Register/Log-in</a>
+                <?php
+                    if (isset($_SESSION["loggedin"]))
+                    {
+                     echo '<a href="logout.php">Logout</a>';
+                    }
+                    else
+                    {
+                     echo '<a href="login.php">Register/Log-in</a>';
+                    }
+                ?>
+                
             </div>
             <div class="Arrow-Right">
                 <div class="arrow">

@@ -199,3 +199,28 @@ input[type=button], input[type=submit], input[type=reset] {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.textbox{
+  grid-area: Article; 
+  text-align: center;
+  color: white;
+  font-family: 'Electrolize', sans-serif;
+  background:linear-gradient(to bottom,rgb(43, 42, 42), black);
+  margin-top: -7vh;
+  font-size: 3vh;
+}
+.textbox a{
+  background: -webkit-linear-gradient(red,magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.textbox a:visited{
+  background: -webkit-linear-gradient(rgb(255, 0, 0),magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+tr{
+  grid-area: Article;
+  text-align: center;
+}
